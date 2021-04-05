@@ -11,13 +11,13 @@
         <a href="#" class="logo">Veganism<span>.</span></a>
         <div class="menuToggle" onclick=" toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#diet">Diet</a></li>
-            <li><a href="#places">Places</a></li>
-            <li><a href="#testing">Testing</a></li>
-            <li><a href="#lifestyle">Lifestyle</a></li>
-            <li><a href="#clothing">Clothing</a></li>
-            <li><a href="#questions">Questions</a></li>
+            <li><a href="#banner" onclick=" toggleMenu();">Home</a></li>
+            <li><a href="#diet" onclick=" toggleMenu();">Diet</a></li>
+            <li><a href="#places" onclick=" toggleMenu();">Places</a></li>
+            <li><a href="#testing" onclick=" toggleMenu();">Testing</a></li>
+            <li><a href="#lifestyle" onclick=" toggleMenu();">Lifestyle</a></li>
+            <li><a href="#clothing" onclick=" toggleMenu();">Clothing</a></li>
+            <li><a href="#questions" onclick=" toggleMenu();">Questions</a></li>
         </ul>
     </header>
     <section class="banner" id="banner">
@@ -145,9 +145,9 @@
         </div>
     </section>
 
-    <section class="banner" id="banner">
+    <section class="lifestyle" id="lifestyle">
         <div class="content">
-            <h3>Veganism outside of the diet</h3>
+            <h3 style="color: #7fcc2b; align-items: center; justify-content: center; font-size: 2em;">Veganism outside of the diet</h3>
             <p>That is where being plant based and vegan differs. Living an ethical life is veganism. Just eating an ethical diet is being plant based. 
                 Plant based eaters usually do not avoid clothing made out of animals or going to unethical entertainment places. 
                 <br><br> Veganism is <b>more</b> than a diet, it is <b style="color: #7fcc2b"> moral stance</b>.
@@ -271,7 +271,9 @@
 
         function toggleMenu() {
             const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation'); 
             menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
         }
     </script>
 </body>
